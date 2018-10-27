@@ -12,14 +12,14 @@ theme = "VeganDave"
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/about/"
+    url = "about/"
 
   [[menu.main]]
     identifier = "recipe"
     name = "Recipes"
-    url = "/recipe/"
+    url = "recipe/"
 
     [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "/post/"
+    url = "post/"
