@@ -1,5 +1,3 @@
-baseURL = "https://markallum.github.io/VeganDave/"
-publishDir = "docs"
 languageCode = "en-gb"
 title = "Vegan Dave"
 theme = "VeganDave"
