@@ -1,6 +1,5 @@
 languageCode = "en-gb"
-baseUrl = "https://markallum.github.io/"
-buildDir = "public"
+baseUrl = ""
 title = "Vegan Dave"
 theme = "VeganDave"
 
@@ -12,14 +11,14 @@ theme = "VeganDave"
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "about/"
+    url = "/about/"
 
   [[menu.main]]
     identifier = "recipe"
     name = "Recipes"
-    url = "recipe/"
+    url = "/recipe/"
 
     [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "post/"
+    url = "/post/"
