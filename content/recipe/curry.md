@@ -6,4 +6,5 @@ type: "recipe"
 tags:
 - indian
 - spicy
+- food
 ---

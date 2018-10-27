@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 	<main>
-		{{ $paginator := .Paginate (where .Data.Pages "Type" "recipe") }}
+		{{ $paginator := .Paginate .Data.Pages }}
 		{{ range $paginator.Pages }}
 			{{ partial "summary.html" . }}
 		{{ end }}

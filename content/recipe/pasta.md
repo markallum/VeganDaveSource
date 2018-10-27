@@ -7,4 +7,5 @@ type: "recipe"
 tags:
 - pasta
 - italian
+- food
 ---

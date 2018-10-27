@@ -1,6 +1,9 @@
 {{ partial "header.html" . }}
-    {{ .Content }}
-    {{ range .Paginator.Pages }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
-    {{ end }}
+	<main>
+		{{ $paginator := .Paginate .Data.Pages }}
+		{{ range $paginator.Pages }}
+			{{ partial "summary.html" . }}
+		{{ end }}
+		{{ partial "pagination.html" . }}
+	</main>
 {{ partial "footer.html" . }}
