@@ -4,14 +4,22 @@ title = "Vegan Dave"
 theme = "VeganDave"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
+[permalinks]
+  page = ":filename"
+
 [menu]
 
   [[menu.main]]
     identifier = "about"
-    name = "about"
+    name = "About"
     url = "/about/"
 
   [[menu.main]]
-    name = "getting started"
-    post = "<span class='alert'>New!</span>"
-    url = "/getting-started/"
+    identifier = "recipe"
+    name = "Recipes"
+    url = "/recipe/"
+
+    [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/post/"
