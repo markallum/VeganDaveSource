@@ -1,0 +1,7 @@
+name = "VeganDave"
+licenselink = ""
+description = ""
+homepage = ""
+tags = ""
+features = ["blog"]
+min_version = 0.19

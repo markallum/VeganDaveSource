@@ -1,0 +1,17 @@
+baseURL = "http://example.org/"
+languageCode = "en-gb"
+title = "Vegan Dave"
+theme = "VeganDave"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
+
+  [[menu.main]]
+    name = "getting started"
+    post = "<span class='alert'>New!</span>"
+    url = "/getting-started/"
