@@ -2,7 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "en-gb"
 title = "Vegan Dave"
 theme = "VeganDave"
-disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [permalinks]
   page = ":filename"
