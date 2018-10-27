@@ -1,5 +1,5 @@
 languageCode = "en-gb"
-baseUrl = ""
+baseUrl = "https://nostalgic-snyder-66983c.netlify.com"
 title = "Vegan Dave"
 theme = "VeganDave"
 
@@ -7,18 +7,17 @@ theme = "VeganDave"
   page = ":filename"
 
 [menu]
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+[[menu.main]]
+  identifier = "recipe"
+  name = "Recipes"
+  url = "/recipe/"
 
-  [[menu.main]]
-    identifier = "recipe"
-    name = "Recipes"
-    url = "/recipe/"
-
-    [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/post/"
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/post/"
