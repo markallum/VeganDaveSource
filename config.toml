@@ -1,4 +1,5 @@
 languageCode = "en-gb"
+baseUrl = "https://markallum.github.io/"
 buildDir = "public"
 title = "Vegan Dave"
 theme = "VeganDave"
