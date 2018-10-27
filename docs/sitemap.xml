@@ -3,25 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://markallum.github.io/VeganDave/post/</loc>
   </url>
   
   <url>
-    <loc>/recipe/</loc>
+    <loc>https://markallum.github.io/VeganDave/recipe/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://markallum.github.io/VeganDave/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://markallum.github.io/VeganDave/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://markallum.github.io/VeganDave/</loc>
     <priority>0</priority>
   </url>
   
