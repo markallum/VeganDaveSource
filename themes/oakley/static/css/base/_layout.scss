@@ -1,0 +1,7 @@
+body {
+    background: red;
+    
+    @include respond-to('small') {
+        background: blue;
+    }
+}

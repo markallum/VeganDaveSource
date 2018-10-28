@@ -1,11 +1,17 @@
-@import 'normalize';
-@import 'breakpoints';
+@import 'base/normalize';
+@import 'base/breakpoints';
+@import 'base/core';
+@import 'base/layout';
+
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/footer';
+@import 'components/post';
+@import 'components/recipe';
+
+@import 'elements/buttons';
+@import 'elements/typography';
+
+@import 'views/page';
 
 
-body {
-    background: red;
-    
-    @include respond-to('small') {
-        background: blue;
-    }
-}
