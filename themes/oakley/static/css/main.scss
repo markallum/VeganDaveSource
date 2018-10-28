@@ -1,5 +1,11 @@
-$color:#fff;
+@import 'normalize';
+@import 'breakpoints';
+
 
 body {
-    background:$color;
+    background: red;
+    
+    @include respond-to('small') {
+        background: blue;
+    }
 }
