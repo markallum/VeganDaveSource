@@ -12,9 +12,12 @@
 	{{ .Hugo.Generator }}
 </head>
 <body>
-	<header>
-		<h1><a href="{{ .Site.BaseURL }}">Header</a></h1>
-		Nav
+	<div class="site-wrapper">
+
+		<header>
+			<h1><a href="{{ .Site.BaseURL }}">Header</a></h1>
+		</header>
+
 		<nav>
 			<ul>
 				{{ range .Site.Menus.main }}
@@ -22,4 +25,3 @@
 				{{ end }}
 			</ul>
 		</nav>
-	</header>

@@ -1,7 +1,15 @@
-body {
-    background: red;
-    
-    @include respond-to('small') {
-        background: blue;
+body
+{
+    background:$black;
+}
+
+.site-wrapper
+{   
+    width:100%;
+
+    @include respond-to('medium')
+    {
+        width:992px;
+        margin:0 auto;
     }
 }
