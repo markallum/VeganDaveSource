@@ -1,7 +1,7 @@
 languageCode = "en-gb"
 baseUrl = "https://nostalgic-snyder-66983c.netlify.com/"
 title = "Vegan Dave"
-theme = "VeganDave"
+theme = "oakley"
 
 [permalinks]
   page = ":filename"
