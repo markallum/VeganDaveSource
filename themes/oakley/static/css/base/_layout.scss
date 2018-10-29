@@ -7,9 +7,9 @@ body
 {   
     width:100%;
 
-    @include respond-to('medium')
+    @include respond-to('full')
     {
-        width:992px;
+        width:920px;
         margin:0 auto;
     }
 }

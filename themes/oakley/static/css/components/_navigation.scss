@@ -6,29 +6,23 @@ nav
 
     >ul
     {
+        @extend .unlist;
         display:flex;
         justify-content:center;
-        padding:0;
-        margin:0;
 
-        >li
+        a
         {
-            list-style-type:none;
+            padding:8px 15px;
+            background:$grey;    
+            color:$black;
+            text-decoration:none;
+            transition:background 0.3s ease-in-out;
+            display:block;
 
-            >a
+            &:hover 
             {
-                padding:8px 15px;
-                background:$grey;
-                color:$black;
-                text-decoration:none;
-                transition:background 0.3s ease-in-out;
-                display:block;
-
-                &:hover 
-                {
-                    background:$black;
-                    color:$white;
-                }
+                background:$black;
+                color:$white;
             }
         }
     }

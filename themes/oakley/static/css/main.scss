@@ -2,6 +2,7 @@
 @import 'base/breakpoints';
 @import 'base/core';
 @import 'base/layout';
+@import 'base/snippets';
 
 @import 'components/header';
 @import 'components/navigation';
@@ -11,6 +12,8 @@
 
 @import 'elements/buttons';
 @import 'elements/typography';
+@import 'elements/blocks';
+@import 'elements/gallery';
 
 @import 'views/page';
 

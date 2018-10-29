@@ -1,16 +1,21 @@
 {{ partial "header.html" . }}
 
+<section class="recipes-section">
+	<div class="gallery-list">
+		{{ range first 10 (where .Pages "Section" "recipe")}}
+		<div class="gallery-item">
+			{{ .Title }}
+		</div>
+		{{ end }}
+	</div>
+</section>
+<section class="blog-section">
 	<h2>Blog</h2>
 	<ul>
 		{{ range first 10 (where .Pages "Section" "post")}}
 		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 		{{ end }}
 	</ul>
-
-	<h2>Recipes</h2>
-	<ul>
-			{{ range first 10 (where .Pages "Section" "recipe")}}
-		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-		{{ end }}
-	</ul>
+</section>
+	
 {{ partial "footer.html" . }}
