@@ -4,7 +4,19 @@
 	<div class="gallery-list">
 		{{ range first 10 (where .Pages "Section" "recipe")}}
 		<div class="gallery-item">
-			{{ .Title }}
+			<div class="gallery-bar">
+				{{ .Title }}		  
+			</div>
+
+			{{ with .Resources }}
+				{{ with .GetMatch "{img/*cover*" }}
+					 {{ $cover := .Resize "600x" }}
+					 {{ with $cover }}
+						  <img class="gallery-image" src="{{ .Permalink }}"/>  
+						  
+					 {{ end }}
+				{{ end }}
+			{{ end }}
 		</div>
 		{{ end }}
 	</div>
