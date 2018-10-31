@@ -5,39 +5,48 @@
     display:flex;
     width:100%;
     flex-wrap:wrap;
+    justify-content:center;
+
+    @include respond-to('large')
+    {
+
+    }
 }
 
 .gallery-item 
 {
     width:100%;
-    height:200px;
     overflow:hidden;
     position:relative;
+    margin-top:2%;
+   
 
-    @include respond-to('small')
-    {
-        width:50%;
-    }
 
     @include respond-to('medium')
+    {
+        flex:1 0 21%;
+    }
+
+    @include respond-to('full')
     {
         width:33%;
     }
 
-    @include respond-to('large')
+    &:hover 
     {
-        width:25%;
+        cursor:pointer;
     }
 }
 
 .gallery-image
 {
     width:100%;
+    
 
-    @include respond-to('small')
+    @include respond-to('medium')
     {
-        width:auto;
-        height:100%;
+        //width:auto;
+     
     }
 }
 

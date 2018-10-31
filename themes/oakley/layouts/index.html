@@ -3,7 +3,7 @@
 <section class="recipes-section">
 	<div class="gallery-list">
 		{{ range first 10 (where .Pages "Section" "recipe")}}
-		<div class="gallery-item">
+		<a href="{{ .Permalink }}" class="gallery-item">
 			<div class="gallery-bar">
 				{{ .Title }}		  
 			</div>
@@ -17,7 +17,7 @@
 					 {{ end }}
 				{{ end }}
 			{{ end }}
-		</div>
+		</a>
 		{{ end }}
 	</div>
 </section>

@@ -5,11 +5,12 @@ body
 
 .site-wrapper
 {   
-    width:100%;
+    width:calc(100% - 4rem);
+    margin:0 auto;
 
     @include respond-to('full')
     {
-        width:920px;
-        margin:0 auto;
+        width:1420px;
+       
     }
 }
