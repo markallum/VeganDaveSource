@@ -1,3 +1,8 @@
+*
+{
+    box-sizing:border-box;
+}
+
 body
 {
     background:$black;
@@ -10,7 +15,7 @@ body
 
     @include respond-to('full')
     {
-        width:1420px;
+        width:1000px;
        
     }
 }

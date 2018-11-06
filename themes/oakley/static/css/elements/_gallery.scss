@@ -5,7 +5,8 @@
     display:flex;
     width:100%;
     flex-wrap:wrap;
-    justify-content:center;
+    padding:5px;
+    background:$white;
 
     @include respond-to('large')
     {
@@ -15,21 +16,24 @@
 
 .gallery-item 
 {
-    width:100%;
+    flex:1 0 100%;
     overflow:hidden;
     position:relative;
-    margin-top:2%;
+    height:350px;
+    //margin:5px;
+    
+    //margin:1rem;
    
 
 
     @include respond-to('medium')
     {
-        flex:1 0 21%;
+        flex:1 0 50%;
     }
 
-    @include respond-to('full')
+    @include respond-to('large')
     {
-        width:33%;
+        flex:1 0 33%;
     }
 
     &:hover 
@@ -38,14 +42,21 @@
     }
 }
 
+.gallery-link {
+    display:block;
+    margin:5px;
+}
+
 .gallery-image
 {
     width:100%;
-    
+    display:block;
+    height:220px;
+    object-fit:cover;
 
     @include respond-to('medium')
     {
-        //width:auto;
+        
      
     }
 }
