@@ -19,7 +19,7 @@
     flex:1 0 100%;
     overflow:hidden;
     position:relative;
-    height:350px;
+    
     //margin:5px;
     
     //margin:1rem;
@@ -36,15 +36,13 @@
         flex:1 0 33%;
     }
 
-    &:hover 
-    {
-        cursor:pointer;
-    }
 }
 
 .gallery-link {
     display:block;
     margin:5px;
+    height:280px;
+    text-decoration:none;
 }
 
 .gallery-image
@@ -61,12 +59,10 @@
     }
 }
 
-.gallery-bar
+.gallery-info 
 {
-    position:absolute;
-    bottom:0;
-    background:rgba(51, 51, 51, 0.5);
-    width:100%;
-    color:white;
-    padding:4px 10px;
+    text-align:center;
+    color:$black;
+    text-transform:uppercase;
+    
 }

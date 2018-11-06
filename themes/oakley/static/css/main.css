@@ -430,7 +430,6 @@ section {
           flex: 1 0 100%;
   overflow: hidden;
   position: relative;
-  height: 350px;
 }
 
 @media (min-width: 520px) {
@@ -449,13 +448,11 @@ section {
   }
 }
 
-.gallery-item:hover {
-  cursor: pointer;
-}
-
 .gallery-link {
   display: block;
   margin: 5px;
+  height: 280px;
+  text-decoration: none;
 }
 
 .gallery-image {
@@ -466,12 +463,9 @@ section {
      object-fit: cover;
 }
 
-.gallery-bar {
-  position: absolute;
-  bottom: 0;
-  background: rgba(51, 51, 51, 0.5);
-  width: 100%;
-  color: white;
-  padding: 4px 10px;
+.gallery-info {
+  text-align: center;
+  color: #373A3B;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

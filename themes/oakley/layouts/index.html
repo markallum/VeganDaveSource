@@ -3,7 +3,7 @@
 <section class="recipes-section">
 	<div class="gallery-list">
 		{{ range first 6 (where .Pages "Section" "recipe")}}
-		<div href="{{ .Permalink }}" class="gallery-item">
+		<div class="gallery-item">
 			<a href="{{ .Permalink }}" class="gallery-link">
 				{{ with .Resources }}
 					{{ with .GetMatch "{img/*cover*" }}
@@ -14,6 +14,9 @@
 						{{ end }}
 					{{ end }}
 				{{ end }}
+				<div class="gallery-info">
+					<h3>{{ .Title }}</h3>
+				</div>
 			</a>
 		</div>
 		{{ end }}
