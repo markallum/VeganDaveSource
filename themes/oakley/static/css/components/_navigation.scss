@@ -1,7 +1,6 @@
 nav
 {
     width:100%;
-    background:$grey;
     overflow:auto;
 
     >ul
@@ -12,17 +11,15 @@ nav
 
         a
         {
-            padding:8px 15px;
-            background:$grey;    
-            color:$black;
+            padding:8px 15px;  
             text-decoration:none;
             transition:background 0.3s ease-in-out;
             display:block;
 
             &:hover 
             {
-                background:$black;
-                color:$white;
+                background:$dark;
+                color:$light;
             }
         }
     }

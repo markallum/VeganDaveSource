@@ -5,13 +5,14 @@
 
 body
 {
-    background:$black;
+    background:$light;
 }
 
 .site-wrapper
 {   
     width:calc(100% - 4rem);
     margin:0 auto;
+    background:$lighter;
 
     @include respond-to('full')
     {
