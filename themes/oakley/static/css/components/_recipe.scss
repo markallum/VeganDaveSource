@@ -1,4 +1,51 @@
-.recipes-section 
+.recipe-section 
 {
     background:none;
+}
+
+.recipe-list
+{
+    @extend .unlist;
+
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    padding:5px;
+}
+
+.recipe-item-wrapper
+{
+    flex:1 0 100%;
+    @include respond-to('medium')
+    {
+        flex:1 0 50%;
+    }
+}
+
+.recipe-item 
+{
+    background:$light;
+    margin:10px;
+    padding:5px;
+    max-height:420px;
+}
+
+.recipe-link {
+    display:block;
+    margin:5px;
+    text-decoration:none;
+}
+
+.recipe-image
+{
+    width:100%;
+    display:block;
+    max-height:300px;
+    object-fit:cover;
+}
+
+.recipe-info 
+{
+    text-align:center;
+    text-transform:uppercase;
 }

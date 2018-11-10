@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:600");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600");
 html {
   line-height: 1.15;
   /* 1 */
@@ -341,27 +341,26 @@ template {
 }
 
 body {
-  background: #EBE3C5;
+  background: #EBEBEB;
 }
 
 .site-wrapper {
-  width: calc(100% - 4rem);
+  width: calc(100%);
   margin: 0 auto;
-  background: #F5F2E9;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .site-wrapper {
-    width: 1000px;
+    width: 1200px;
   }
 }
 
-.unlist, nav > ul, .gallery-list {
+.unlist, nav > ul, .recipe-list {
   padding: 0;
   margin: 0;
 }
 
-.unlist > li, nav > ul > li, .gallery-list > li {
+.unlist > li, nav > ul > li, .recipe-list > li {
   list-style-type: none;
 }
 
@@ -398,29 +397,15 @@ nav > ul a {
 }
 
 nav > ul a:hover {
-  background: #575651;
-  color: #EBE3C5;
+  background: #4C5054;
+  color: #F7F9FA;
 }
 
-.recipes-section {
+.recipe-section {
   background: none;
 }
 
-* {
-  color: #575651;
-  font-family: "Open Sans", sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-  color: #404B54;
-  font-family: "Proza Libre", serif;
-}
-
-section {
-  width: 100%;
-}
-
-.gallery-list {
+.recipe-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,47 +415,57 @@ section {
   padding: 5px;
 }
 
-.gallery-item {
+.recipe-item-wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
-  overflow: hidden;
-  position: relative;
 }
 
 @media (min-width: 620px) {
-  .gallery-item {
+  .recipe-item-wrapper {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
   }
 }
 
-@media (min-width: 880px) {
-  .gallery-item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 33%;
-            flex: 1 0 33%;
-  }
+.recipe-item {
+  background: #F7F9FA;
+  margin: 10px;
+  padding: 5px;
+  max-height: 420px;
 }
 
-.gallery-link {
+.recipe-link {
   display: block;
   margin: 5px;
-  height: 280px;
   text-decoration: none;
 }
 
-.gallery-image {
+.recipe-image {
   width: 100%;
   display: block;
-  height: 220px;
+  max-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.gallery-info {
+.recipe-info {
   text-align: center;
   text-transform: uppercase;
+}
+
+* {
+  color: #4C5054;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #4C5054;
+  font-weight: 600;
+}
+
+section {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

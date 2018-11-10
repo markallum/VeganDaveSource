@@ -2,7 +2,7 @@ $breakpoints: (
   'small':  ( min-width:  520px ),
   'medium': ( min-width:  620px ),
   'large':  ( min-width: 880px ),
-  'full': ( min-width: 1000px )
+  'full': ( min-width: 1200px )
 ) !default;
 
 /// Mixin to manage responsive breakpoints

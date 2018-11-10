@@ -5,18 +5,17 @@
 
 body
 {
-    background:$light;
+    background:$grey;
 }
 
 .site-wrapper
 {   
-    width:calc(100% - 4rem);
+    width:calc(100%);
     margin:0 auto;
-    background:$lighter;
 
     @include respond-to('full')
     {
-        width:1000px;
+        width:1200px;
        
     }
 }
