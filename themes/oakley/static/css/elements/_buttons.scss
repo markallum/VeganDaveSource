@@ -1,0 +1,14 @@
+.button {
+    background:$dark;
+    color:$light;
+    margin-top:20px;
+    display:inline-block;
+    padding:6px 12px;
+    text-decoration:none;
+    border-radius:3px;
+
+    &:hover
+    {
+        
+    }
+}

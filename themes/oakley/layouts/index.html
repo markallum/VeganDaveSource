@@ -5,7 +5,6 @@
 		{{ range first 6 (where .Pages "Section" "recipe")}}
 		<div class="recipe-item-wrapper">
 			<div class="recipe-item">
-				<a href="{{ .Permalink }}" class="recipe-link">
 					{{ with .Resources }}
 						{{ with .GetMatch "{img/*cover*" }}
 							{{ $cover := .Resize "600x" }}
@@ -17,9 +16,14 @@
 					{{ end }}
 					<div class="recipe-info">
 						<h3>{{ .Title }}</h3>
-						<p class="recipe-tags"></p>
+						<div class="spacer"></div>
+						<ul class="recipe-tags">
+							{{ range .Params.tags }}
+							<li><a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
+							{{ end }}
+						</ul>
+						<a class="button primary" href="{{ .Permalink }} ">See Recipe</a>
 					</div>
-				</a>
 			</div>
 		</div>
 		{{ end }}

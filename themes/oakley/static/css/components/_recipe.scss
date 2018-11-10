@@ -27,7 +27,6 @@
     background:$light;
     margin:10px;
     padding:5px;
-    max-height:420px;
 }
 
 .recipe-link {
@@ -47,5 +46,21 @@
 .recipe-info 
 {
     text-align:center;
-    text-transform:uppercase;
+    padding-bottom:20px;
+}
+
+.recipe-tags 
+{
+    @extend .unlist;
+    margin-top:20px;
+    >li
+    {
+        list-style-type:none;
+
+        >a 
+        {
+            text-decoration:none;
+            font-style:italic;
+        }
+    }
 }
