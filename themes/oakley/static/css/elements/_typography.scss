@@ -14,10 +14,34 @@ h1, h2, h3, h4, h5
     font-weight:600;
 }
 
+h2
+{
+    text-align:center;
+    margin:0;
+    text-transform:uppercase;
+    font-size:1.1em;
+}
+
+h3 
+{
+    font-size:1.3em;
+
+    &.post-title
+    {
+        font-size:1.8em;
+    }
+}
+
 .spacer 
 {
     width:26px;
-    height:3px;
+    height:4px;
     margin:0 auto;
     background:$dark;
+}
+
+p
+{
+    font-size:1.1em;
+    line-height:1.7;
 }

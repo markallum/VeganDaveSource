@@ -13,15 +13,15 @@
 </head>
 <body>
 	<div class="site-wrapper">
+		<div class="site-inner">
+			<header>
+				<h1><a href="{{ .Site.BaseURL }}">Header</a></h1>
+			</header>
 
-		<header>
-			<h1><a href="{{ .Site.BaseURL }}">Header</a></h1>
-		</header>
-
-		<nav>
-			<ul>
-				{{ range .Site.Menus.main }}
-				<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-				{{ end }}
-			</ul>
-		</nav>
+			<nav>
+				<ul>
+					{{ range .Site.Menus.main }}
+					<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</nav>
