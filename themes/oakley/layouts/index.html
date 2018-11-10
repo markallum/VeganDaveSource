@@ -2,7 +2,7 @@
 
 <section class="recipe-section">
 	<div class="recipe-list">
-		{{ range first 6 (where .Pages "Section" "recipe")}}
+		{{ range first 4 (where .Pages "Section" "recipe")}}
 		<div class="recipe-item-wrapper">
 			<div class="recipe-item">
 					{{ with .Resources }}
