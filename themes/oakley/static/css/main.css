@@ -355,12 +355,12 @@ body {
   }
 }
 
-.unlist, nav > ul, .post-list, .recipe-list, .recipe-tags {
+.unlist, nav > ul, .post-list, .recipe-tags {
   padding: 0;
   margin: 0;
 }
 
-.unlist > li, nav > ul > li, .post-list > li, .recipe-list > li, .recipe-tags > li {
+.unlist > li, nav > ul > li, .post-list > li, .recipe-tags > li {
   list-style-type: none;
 }
 

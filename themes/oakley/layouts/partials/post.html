@@ -1,0 +1,13 @@
+
+ <div class="post-item">
+                    <h3 class="post-title">{{ .Title }}</h3>
+                    <div class="spacer"></div>
+                    <ul class="tags">
+                        {{ range .Params.tags }}
+                        <li><a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
+                        {{ end }}
+                    </ul>
+                    <div class="post-inner">
+                        <p>{{ .Summary }}</p>
+                    </div>
+                </div>

@@ -1,53 +1,17 @@
 {{ partial "header.html" . }}
 <section class="recipe-section">
-	<ul class="recipe-list">
+	<div class="recipe-list">
 		{{ range first 4 (where .Pages "Section" "recipe")}}
-		<li class="recipe-item-wrapper">
-			<div class="recipe-item">
-					{{ with .Resources }}
-						{{ with .GetMatch "{img/*cover*" }}
-							{{ $cover := .Resize "600x" }}
-							{{ with $cover }}
-								<img class="recipe-image" src="{{ .Permalink }}"/>  
-								
-							{{ end }}
-						{{ end }}
-					{{ end }}
-					<div class="recipe-info">
-						<h3>{{ .Title }}</h3>
-						<div class="spacer"></div>
-						<ul class="recipe-tags">
-							{{ range .Params.tags }}
-							<li><a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
-							{{ end }}
-						</ul>
-						<a class="button primary" href="{{ .Permalink }} ">See Recipe</a>
-					</div>
-			</div>
-		</li>
+			{{ partial "recipe.html" . }}	
 		{{ end }}
 	</ul>
 </section>
 <section class="post-section">
-	<ul class="post-list">
+	<div class="post-list">
 		{{ range first 4 (where .Pages "Section" "post")}}
-			<li class="post-item">
-				<h3 class="post-title">{{ .Title }}</h3>
-				<div class="spacer"></div>
-				<ul class="recipe-tags">
-					{{ range .Params.tags }}
-					<li><a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
-					{{ end }}
-				</ul>
-				<div class="post-inner">
-					<p>{{ .Summary }}</p>
-				</div>
-				
-			</li>
-
-		
+			{{ partial "post.html" . }}	
 		{{ end }}
-	</ul>
+	</div>
 </section>
 	
 {{ partial "footer.html" . }}

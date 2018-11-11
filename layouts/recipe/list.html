@@ -1,9 +1,9 @@
 {{ partial "header.html" . }}
-	<main>
+	<div class="recipe-list">
 		{{ $paginator := .Paginate .Data.Pages }}
 		{{ range $paginator.Pages }}
-			{{ partial "summary.html" . }}
+			{{ partial "recipe.html" . }}
 		{{ end }}
 		{{ partial "pagination.html" . }}
-	</main>
+	</div>
 {{ partial "footer.html" . }}
