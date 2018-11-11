@@ -1,11 +1,12 @@
 header
 {
+    width:100%;
+    height:60px;
+    background:$blackboard;
     overflow:auto;
+}
 
-    h1
-    {
-        text-align:center;
-        text-transform:uppercase;
-        margin:0;
-    }
+.site-title 
+{
+    margin:0;
 }

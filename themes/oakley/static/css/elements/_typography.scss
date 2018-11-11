@@ -4,13 +4,13 @@ $open-sans: 'Open Sans', sans-serif;
 
 *
 {
-    color:$dark;
+    color:$blackboard;
     font-family:$open-sans;
 }
 
 h1, h2, h3, h4, h5
 {
-    color:$dark;
+    color:$blackboard;
     font-weight:600;
 }
 
@@ -37,7 +37,7 @@ h3
     width:26px;
     height:4px;
     margin:0 auto;
-    background:$dark;
+    background:$blackboard;
 }
 
 p
