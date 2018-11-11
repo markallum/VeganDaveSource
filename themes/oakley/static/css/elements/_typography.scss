@@ -20,11 +20,13 @@ h2
     margin:0;
     text-transform:uppercase;
     font-size:1.1em;
+    
 }
 
 h3 
 {
     font-size:1.3em;
+    color:$oxblood;
 
     &.post-title
     {
@@ -34,14 +36,37 @@ h3
 
 .spacer 
 {
-    width:26px;
-    height:4px;
+    width:45px;
+    height:2px;
     margin:0 auto;
-    background:$blackboard;
+    background:$grain;
 }
 
 p
 {
     font-size:1.1em;
     line-height:1.7;
+}
+
+.tags 
+{
+    @extend .unlist;
+    margin:20px 0 10px 0;
+    >li
+    {
+        list-style-type:none;
+
+        >a 
+        {
+            text-decoration:none;
+            font-style:italic;
+            color:$tan;
+            border-bottom:1px dashed $tan;
+            transition:color 0.3s ease-out;
+
+            &:hover{
+                color:$oxblood;
+            }
+        }
+    }
 }

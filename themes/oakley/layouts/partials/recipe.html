@@ -12,7 +12,7 @@
                 <div class="recipe-info">
                     <h3>{{ .Title }}</h3>
                     <div class="spacer"></div>
-                    <ul class="recipe-tags">
+                    <ul class="tags">
                         {{ range .Params.tags }}
                         <li><a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
                         {{ end }}
