@@ -388,23 +388,24 @@ body {
 
 header {
   width: 100%;
-  padding: 9px 0 0 10px;
   position: fixed;
   top: 0;
-  height: 90px;
+  padding-top: 5px;
   text-align: center;
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
 .site-title {
   margin: 0;
+  padding: 0;
   display: inline-block;
-  margin-top: 10px;
 }
 
 .site-title > a {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0;
   font-size: 0.9em;
   font-weight: 600;
   color: #89AE9C;
