@@ -505,6 +505,10 @@ nav > ul a:hover {
   }
 }
 
+.closed {
+  display: none;
+}
+
 #nav-button {
   position: absolute;
   top: 0;
