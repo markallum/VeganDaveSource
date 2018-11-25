@@ -2,6 +2,7 @@ nav
 {
     width:100%;
     overflow:auto;
+    display:none;
 
     >ul
     {
@@ -23,4 +24,11 @@ nav
             }
         }
     }
+}
+
+.menu-icon {
+    position:fixed;
+    top:0;
+    right:0;
+    font-size:0;
 }
