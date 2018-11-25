@@ -7,9 +7,25 @@
     text-decoration:none;
     border-radius:3px;
     transition:background 0.3s ease-out;
+    font-family:$header-font;
 
     &:hover
     {
         background:shade($bay-leaf, 20%);
     }
+}
+
+
+.section-actions {
+    text-align:center;
+    padding:30px 0;
+}
+
+.section-link {
+    @extend .button;
+    font-size:1.3em;
+    margin:0 auto;
+    display:inline-block;
+    text-transform:uppercase;
+    padding:10px 18px;
 }

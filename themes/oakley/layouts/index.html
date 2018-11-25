@@ -4,7 +4,11 @@
 		{{ range first 4 (where .Pages "Section" "recipe")}}
 			{{ partial "recipe.html" . }}	
 		{{ end }}
-	</ul>
+	</div>
+	<div class="section-actions">
+		<a class="section-link" href="#">More Recipes</a>
+	</div>
+	<div class="big-spacer"></div>
 </section>
 <section class="post-section">
 	<div class="post-list">
@@ -12,6 +16,10 @@
 			{{ partial "post.html" . }}	
 		{{ end }}
 	</div>
+	<div class="section-actions">
+		<a class="section-link" href="#">More Posts</a>
+	</div>
+	<div class="big-spacer"></div>
 </section>
 	
 {{ partial "footer.html" . }}

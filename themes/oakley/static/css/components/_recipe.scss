@@ -3,6 +3,7 @@
     display:flex;
     width:100%;
     flex-wrap:wrap;
+    padding:10px;
 }
 
 .recipe-item-wrapper
@@ -12,13 +13,27 @@
     {
         flex:1 0 50%;
     }
+
+    @include respond-to('full')
+    {
+        flex:1 0 25%;
+    }
 }
 
 .recipe-item 
 {
     background:$white;
-    margin:10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+    margin-bottom:10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+
+    @include respond-to('medium')
+    {
+        margin:10px;
+    }
+}
+
+.recipe-title {
+    height:40px;
 }
 
 .recipe-link {
@@ -38,6 +53,6 @@
 .recipe-info 
 {
     text-align:center;
-    padding:5px 0 30px 0;
+    padding:5px 10px 30px 10px;
 }
 

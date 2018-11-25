@@ -10,14 +10,14 @@
                     {{ end }}
                 {{ end }}
                 <div class="recipe-info">
-                    <h3>{{ .Title }}</h3>
+                    <h3 class="recipe-title">{{ .Title }}</h3>
                     <div class="spacer"></div>
                     <ul class="tags">
                         {{ range .Params.tags }}
                         <li><a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a> </li>
                         {{ end }}
                     </ul>
-                    <a class="button primary" href="{{ .Permalink }} ">See Recipe</a>
+                    <a class="button primary recipe-button" href="{{ .Permalink }} ">See Recipe</a>
                 </div>
         </div>
     </div>
