@@ -10,22 +10,47 @@ nav
         width:400px;
     }
 
+    @include respond-to('large') {
+        position:static;
+        background:$white;
+
+    }
+
     >ul
     {
         @extend .unlist;
+
+        li {
+            @include respond-to('large') {
+                float:right;
+            }
+        }
 
         a
         {
             padding:15px 15px;  
             text-decoration:none;
+            text-transform:uppercase;
             transition:background 0.3s ease-in-out;
             display:block;
             background:$bay-leaf;
             color:$aqua-spring;
+            font-size:0.9em;
 
             &:hover 
             {
                 background:shade($bay-leaf, 20%);
+            }
+
+            @include respond-to('large') {
+                background:$white;
+                color:$bay-leaf;
+                height:75px;
+                padding:27px 20px 0 20px;
+                
+                &:hover {
+                    background:$tea-green;
+                }
             }
         }
     }
@@ -34,9 +59,8 @@ nav
 #nav-button {
     position:absolute;
     top:0;
-    right:0;
+    right:10px;
     padding:25px;
-    background:$tea-green;
 
     >div {
         height:3px;
@@ -46,9 +70,16 @@ nav
     }
 
     &:hover {
+        background:$tea-green;
+        transition:background 0.3s ease-in-out;
+        cursor:pointer;
         
         >div {
             background:shade($bay-leaf, 20%);
         }
+    }
+
+    @include respond-to('large') {
+        display:none;
     }
 }

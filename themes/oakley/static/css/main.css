@@ -348,7 +348,7 @@ body {
 .site-wrapper {
   width: 100%;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 80px;
 }
 
 @media (min-width: 1200px) {
@@ -391,18 +391,44 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 5px;
-  text-align: center;
   background: #FAFAFA;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   height: 75px;
+}
+
+.header-inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .header-inner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.header-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px;
+}
+
+@media (min-width: 620px) {
+  .header-col {
+    padding: 0 20px;
+  }
 }
 
 .site-title {
   margin: 0;
   padding: 0;
   display: inline-block;
+  padding-top: 5px;
 }
 
 .site-title > a {
@@ -438,26 +464,52 @@ nav {
   }
 }
 
+@media (min-width: 880px) {
+  nav {
+    position: static;
+    background: #FAFAFA;
+  }
+}
+
+@media (min-width: 880px) {
+  nav > ul li {
+    float: right;
+  }
+}
+
 nav > ul a {
   padding: 15px 15px;
   text-decoration: none;
+  text-transform: uppercase;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
   display: block;
   background: #89AE9C;
   color: #F7FDFA;
+  font-size: 0.9em;
 }
 
 nav > ul a:hover {
   background: #6e8b7d;
 }
 
+@media (min-width: 880px) {
+  nav > ul a {
+    background: #FAFAFA;
+    color: #89AE9C;
+    height: 75px;
+    padding: 27px 20px 0 20px;
+  }
+  nav > ul a:hover {
+    background: #DBF2C4;
+  }
+}
+
 #nav-button {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 10px;
   padding: 25px;
-  background: #DBF2C4;
 }
 
 #nav-button > div {
@@ -467,8 +519,21 @@ nav > ul a:hover {
   margin-bottom: 5px;
 }
 
+#nav-button:hover {
+  background: #DBF2C4;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 #nav-button:hover > div {
   background: #6e8b7d;
+}
+
+@media (min-width: 880px) {
+  #nav-button {
+    display: none;
+  }
 }
 
 .post-list {

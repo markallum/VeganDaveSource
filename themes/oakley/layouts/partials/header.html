@@ -13,26 +13,37 @@
 </head>
 <body>
 	<div class="site-wrapper">
-		<div class="site-inner">
 			<header>
-				<h1 class="site-title"><a href="{{ .Site.BaseURL }}">
-					<img src="{{ "/images/VeganDave-Logo.png" | relURL }}" />
-					</a>
-				</h1>
-				
-
-				<div id="nav-button">
-						<div id='top'></div>
-						<div id='middle'></div>
-						<div id='bottom'></div>
-				</div>
-				
-				<nav>
-					<ul>
-						{{ range .Site.Menus.main }}
-							<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-						{{ end }}
-					</ul>
-				</nav>
-				
+				<div class="header-inner">
+					<div class="header-col">
+						<h1 class="site-title">
+							<a href="{{ .Site.BaseURL }}">
+								<img src="{{ "/images/VeganDave-Logo.png" | relURL }}" />
+							</a>
+						</h1>
+					</div>
+	
+					<div class="header-col">
+						
+					</div>
+					
+					<div class="header-col">
+							<div id="nav-button">
+									<div id='top'></div>
+									<div id='middle'></div>
+									<div id='bottom'></div>
+							</div>
+	
+							<nav>
+								<ul>
+									{{ range .Site.Menus.main }}
+										<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+									{{ end }}
+								</ul>
+							</nav>
+					</div>		
+				</div>		
 			</header>
+				
+		<div class="site-inner">
+			
