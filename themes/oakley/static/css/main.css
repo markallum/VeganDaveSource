@@ -396,6 +396,7 @@ header {
   background: #FAFAFA;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  height: 75px;
 }
 
 .site-title {
@@ -425,37 +426,49 @@ header {
 
 nav {
   width: 100%;
-  overflow: auto;
-  display: none;
+  position: fixed;
+  top: 75px;
+  right: 0;
+  font-family: "Lato", serif;
 }
 
-nav > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (min-width: 620px) {
+  nav {
+    width: 400px;
+  }
 }
 
 nav > ul a {
-  padding: 8px 15px;
+  padding: 15px 15px;
   text-decoration: none;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
   display: block;
+  background: #89AE9C;
+  color: #F7FDFA;
 }
 
 nav > ul a:hover {
-  background: #4F4F4F;
-  color: #89AE9C;
+  background: #6e8b7d;
 }
 
-.menu-icon {
-  position: fixed;
+#nav-button {
+  position: absolute;
   top: 0;
   right: 0;
-  font-size: 0;
+  padding: 25px;
+  background: #DBF2C4;
+}
+
+#nav-button > div {
+  height: 3px;
+  width: 40px;
+  background: #89AE9C;
+  margin-bottom: 5px;
+}
+
+#nav-button:hover > div {
+  background: #6e8b7d;
 }
 
 .post-list {

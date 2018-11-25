@@ -1,34 +1,54 @@
 nav
 {
     width:100%;
-    overflow:auto;
-    display:none;
+    position:fixed;
+    top:75px;
+    right:0;
+    font-family:$header-font;
+
+    @include respond-to('medium') {
+        width:400px;
+    }
 
     >ul
     {
         @extend .unlist;
-        display:flex;
-        justify-content:center;
 
         a
         {
-            padding:8px 15px;  
+            padding:15px 15px;  
             text-decoration:none;
             transition:background 0.3s ease-in-out;
             display:block;
+            background:$bay-leaf;
+            color:$aqua-spring;
 
             &:hover 
             {
-                background:$emperor;
-                color:$bay-leaf;
+                background:shade($bay-leaf, 20%);
             }
         }
     }
 }
 
-.menu-icon {
-    position:fixed;
+#nav-button {
+    position:absolute;
     top:0;
     right:0;
-    font-size:0;
+    padding:25px;
+    background:$tea-green;
+
+    >div {
+        height:3px;
+        width:40px;
+        background:$bay-leaf;
+        margin-bottom:5px;
+    }
+
+    &:hover {
+        
+        >div {
+            background:shade($bay-leaf, 20%);
+        }
+    }
 }

@@ -17,17 +17,22 @@
 			<header>
 				<h1 class="site-title"><a href="{{ .Site.BaseURL }}">
 					<img src="{{ "/images/VeganDave-Logo.png" | relURL }}" />
+					</a>
 				</h1>
 				
-				<a role="button" class="menu-icon">open menu</a>
-				<nav>
-						
-						<ul>
-							{{ range .Site.Menus.main }}
-							<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-							{{ end }}
-						</ul>
-				</nav>
-			</header>
 
-			
+				<div id="nav-button">
+						<div id='top'></div>
+						<div id='middle'></div>
+						<div id='bottom'></div>
+				</div>
+				
+				<nav>
+					<ul>
+						{{ range .Site.Menus.main }}
+							<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+						{{ end }}
+					</ul>
+				</nav>
+				
+			</header>
