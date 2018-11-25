@@ -5,7 +5,7 @@
 
 body
 {
-    background:$grain;
+    background:$aqua-spring;
 
 }
 
@@ -13,7 +13,7 @@ body
 {   
     width:100%;
     margin:0 auto;
-    padding-top:60px;
+    padding-top:90px;
 
     @include respond-to('full')
     {

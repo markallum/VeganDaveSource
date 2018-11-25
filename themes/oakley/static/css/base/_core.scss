@@ -1,6 +1,23 @@
 $white:#FAFAFA;
-$grain:#D7CEC7;
-$blackboard:#565656;
-$oxblood:#76323F;
-$umber:#8B273A;
-$tan:#C09F80;
+$aqua-spring:#F7FDFA;
+$tea-green:#DBF2C4;
+$emperor:#4F4F4F;
+$bay-leaf:#89AE9C;
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
