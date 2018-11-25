@@ -5,6 +5,7 @@ nav
     top:75px;
     right:0;
     font-family:$header-font;
+    display:none;
 
     @include respond-to('medium') {
         width:400px;
@@ -13,7 +14,7 @@ nav
     @include respond-to('large') {
         position:static;
         background:$white;
-
+        display:block;
     }
 
     >ul
